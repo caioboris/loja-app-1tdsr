@@ -1,23 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
-import Post from './post/page'
 
-export default function Home() {
+export default function Home({children}) {
   return (
     <div>
-      <h1>Home</h1>
-      <ul>
-        <li>
-          <Link href="/post">POST</Link>
-        </li>
-        <li>
-          <Link href="/post/post1">POST</Link>
-        </li>
-        <li>
-          <Link href="/post/post2">POST</Link>
-        </li>
-      </ul>
-    </div>
+      <header>
+        <nav>
+          <p><Link href="/produtos/tenis">Tênis</Link></p>
+          <p><Link href="/produtos/calca">Calça</Link></p>
+          <p><Link href="/produtos/meia">Meia</Link></p>
+          <p><Link href="/produtos/camisa">Camisa</Link></p>
+        </nav>
+      </header>
+    </div>   
   )
 }
 
