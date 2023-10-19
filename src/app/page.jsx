@@ -1,18 +1,17 @@
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
 
-export default function Home({children}) {
-  return (
+export default function Home(){
+
+  return(
     <div>
-      <header>
-        <nav>
-          <p><Link href="/produtos/tenis">Tênis</Link></p>
-          <p><Link href="/produtos/calca">Calça</Link></p>
-          <p><Link href="/produtos/meia">Meia</Link></p>
-          <p><Link href="/produtos/camisa">Camisa</Link></p>
-        </nav>
-      </header>
-    </div>   
+       <h1>Home</h1>
+
+        <div>
+          <figure>
+            <Image src="/img/words-1797662_640.png" alt="Nuvem de palavras" width={640} height={464}/>
+          </figure>
+        </div>
+
+    </div>
   )
 }
-
